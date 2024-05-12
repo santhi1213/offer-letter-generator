@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #2a2a2a;
+    height: 100vh;
+}
+
+.title{
+    color: cornsilk;
+}
+
+.fields{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fields .name{
+    margin: 20px;
+    margin-top: 10%;
+}
+
+.fields div{
+    margin: 30px;
+}
+
+.fields div input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    padding: 5px;
+}
+
+
+.fields div label{
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+#submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #87F4AA;
+    border: 0;
+    outline: none;
+    font-size: 17px;
+}
+
+#submit:hover{
+    background-color: #9E84F4;
+}
+
+.offerLetterContainer{
+    width: 100%;
+    padding-left: 300px;
+}
+
+#offerLetter{
+    width: 550px;
+    margin-left: 30%;
+    color: white;
+    padding: 30px;
+    display: none;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 3px 3px whitesmoke;
+    border-radius: 10px;
+    color: black;
+}
+
+
+#downloadBtn{
+    display: none;
+    margin-left: 45%;
+    margin-top: 50px;
+    height: 50px;
+    border: 0;
+    outline: 0;
+    width: 100px;
+    border-radius: 5px;
+    background-color: green;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#inputDomain{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    margin-left: -10px;
+}
+
+#inputEmail{
+    margin-left: 5px;
+}
+
+#inputPeriod{
+    margin-right: 18px;
+}
+
+#inputDate{
+    margin-right: -15px;
+}

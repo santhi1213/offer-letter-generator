@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title id="tabTitle">Internship Offer from Suvidha Foundation</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.js" ></script>
+</head>
+<body id="body">
+	<div class="fields" id="fields">
+        <h1 class="title">Internship Offer from Suvidha Foundation</h1>
+        <div class="name">
+            <label>Name:</label>
+            <input type="text" id="inputName" placeholder="Enter your Name..." required/>
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" id="inputEmail" placeholder="Enter your Email..." required/>
+        </div>
+        <div>
+            <label>Domain:</label>
+            <select  id="inputDomain">
+                <option >--select--</option>
+                <option>Web Development</option>
+                <option>Artificial Intelligence</option>
+                <option>Machine Learning</option>
+                <option>Cyber Security</option>
+                <option>Crypto Currency</option>
+            </select>
+            </div>
+        <div>
+            <label>Duration:</label>
+            <input type="number" id="inputPeriod" placeholder="Enter the Internship Duration..." required/>
+        </div>
+        <div>
+            <label>Date:</label>
+            <input type="date" id="inputDate" required/>
+        </div>
+        <div>
+            <button id="submit" onclick="show()">Submit</button>
+        </div>
+    </div>
+
+    <div id="offerLetter">
+        <letter id="letter">
+            <h2 style="margin-left: 5%;">Internship offer from Suvidha Foundation</h2>
+            <p id="date">date.value</p>
+                <br/><br/><br/>
+                
+                <p>
+
+                    To  <br/>
+
+                    <name style="margin-left:30px" id="name">{name.value}</name> <br/>
+                    <email style="margin-left:30px" id="email">{email.value}</email> <br/><br/>
+
+                    Dear <name id="dearName">{name.value},</name> <br/><br/><br/>
+                        
+                    Sub:Internship Offer Letter.  <br/><br/><br/>
+                        
+                    Greetings from Suvidha Foundation...!  <br/><br/><br/>
+                        
+                    In connection with your internship Application, 
+                    This is to inform you that you are offered with <time id="duration">{timePeriod.value}</time> months internship in the domain of <domain id="domain">{domain.value}</domain> in virtual mode.  <br/><br/><br/>
+                    
+                    <span style="color:red">Note:</span>This offer letter does not confirms that you had completed the internship.  <br/><br/><br/> 
+                        
+                    Thank you,<br/>Suvidha Foundation HR  <br/><br/><br/>
+                        
+                    <span style= "margin-left:20%"><a href="https://www.suvidhafoundationedutech.org/">www.suvidhafoundationedutech.org</a></span>
+                </p>
+        
+                </p>
+        </letter>
+    </div>
+    <button id="downloadBtn">Download</button>
+
+    <script src="offer.js"></script>
+    <script src="pdf.js"></script>
+</body>
+</html>
